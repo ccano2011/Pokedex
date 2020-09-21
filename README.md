@@ -85,7 +85,7 @@ Results Page:
 | CSS Mobile-Styling | L | 2hrs| ? | ? |
 | Creating a Proper redirect button that takes results and sends user to Bulbapedia w/ results  | L | 2hrs| ? | ? |
 | Adding Sounds/Music | L | 2hrs| ? | ? |
-| Total | H | 32hrs| ? | ? |
+| Total | H | 27hrs| ? | ? |
 
 ## Code Snippet
 
