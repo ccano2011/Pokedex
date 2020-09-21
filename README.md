@@ -64,7 +64,7 @@ Results Page:
 |  Day | Deliverable | Status
 |---|---| ---|
 |TBD| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|TBD| Project Approval | Incomplete
+|TBD| Project Approval | Approved
 |TBD| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |TBD| MVP | Incomplete
 |TBD| Post MVP/Styling | Incomplete
