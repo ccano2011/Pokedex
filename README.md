@@ -64,7 +64,7 @@ Results Page:
 |  Day | Deliverable | Status
 |---|---| ---|
 |TBD| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-|TBD| Project Approval | Incomplete
+|TBD| Project Approval | Approved
 |TBD| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |TBD| MVP | Incomplete
 |TBD| Post MVP/Styling | Incomplete
@@ -78,8 +78,8 @@ Results Page:
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Procuring Assests for project| H | 2hrs| ? | ? |
-| Initial HTML document w/ Buttons, and Text-Inputs to set parameters for going through the API| H | 4hrs| ? | ? |
+| Procuring Assests for project| H | 2hrs| 1hr 7min. | ? |
+| Initial HTML document w/ Buttons, and Text-Inputs to set parameters for going through the API| H | 4hrs| 48 min | ? |
 | Implemmenting the API w proper Endpoints for JS in the console| H | 3hrs| ? | ? |
 | Have JS push results to the DOM| H | 5hrs| ? | ? |
 | Initial Homepage CSS-Styling | H | 5hrs| ? | ? |
