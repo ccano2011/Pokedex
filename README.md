@@ -80,12 +80,14 @@ Results Page:
 | --- | :---: |  :---: | :---: | :---: |
 | Procuring Assests for project| H | 2hrs| ? | ? |
 | Initial HTML document w/ Buttons, and Text-Inputs to set parameters for going through the API| H | 4hrs| ? | ? |
-| Implemmenting the API w proper Endpoints for JS Call/Display Results Funciton| H | 10hrs| ? | ? |
+| Implemmenting the API w proper Endpoints for JS in the console| H | 3hrs| ? | ? |
+| Have JS push results to the DOM| H | 5hrs| ? | ? |
 | Initial Homepage CSS-Styling | H | 5hrs| ? | ? |
 | CSS Mobile-Styling | L | 2hrs| ? | ? |
 | Creating a Proper redirect button that takes results and sends user to Bulbapedia w/ results  | L | 2hrs| ? | ? |
+| Finilizing the CSS design| H | 3hrs| ? | ? |
 | Adding Sounds/Music | L | 2hrs| ? | ? |
-| Total | H | 27hrs| ? | ? |
+| Total | H | 28hrs| ? | ? |
 
 ## Code Snippet
 
