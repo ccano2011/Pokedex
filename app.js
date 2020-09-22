@@ -7,7 +7,7 @@
 // const APIdomain = 'https://pokeapi.co/api/v2/pokemon/';
 const submitButton = document.querySelector("#submit");
 const pokemonSearch = document.querySelector("#pokemonSearch");
-const topOfPage = document.querySelector(".top-of-page");
+const topOfPage = document.querySelector(".topOfPage");
 
 submitButton.addEventListener("click", userInput)//, async (event) => {
 // event.preventDefault();})
@@ -26,20 +26,20 @@ async function userInput(e) {
     let userInput = pokemonSearch.value;
     // console.log(userInput)
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${userInput}`)
-    console.log(response.data.name)
-    // renderList()
-    response.data.name
+    console.log(response.data)
+    renderList(response.data)
   } catch (error) {
     console.log(`Error: ${error}`)
   }
 }
-// userInput()
+userInput()
 
-// function renderList() {
-//   const pokemonName = document.createElement('h1')  //;
-//   userInput()
-//   console.log(name)
-//   pokemonName.innerHTML = `${name}`
-//   document.querySelector('.topOfPage').appendChild(name)
-// }
+const renderList = species => {
+  for (const pokemon in species) {
+    console.log(species[pokemon].name)
+    const pokemonName = document.createElement('h1')
+    pokemonName.innerHTML = species[pokemon].name
+    topOfPage.appendChild(pokemonName);
+  }
+}
 // console.log(renderList())
