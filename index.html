@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="app.js"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <title>Pokedex</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="app.js"></script>
+
 </head>
 
 <body>
@@ -21,8 +22,8 @@
 
   <main>
     <form class="search">
-      <!--TEMPORARY SEARCH FUNCTION; WILL BE DELEGATED TO ANOTHER PAGE-->
-      <input type="text" name="pokemon" placeholder="Who's that Pokémon?" id="pokemonSearch" />
+      <!--TEMPORARY SEARCH FUNCTION; TO BE DELEGATED TO ANOTHER PAGE-->
+      <input type="text" name="pokemon" placeholder="Who's that Pokémon?" value="" id="pokemonSearch" />
       <button id="submit">GO!</button>
       <!-- <input type="submit" placeholder="GO" id="submitButton" /> -->
     </form>
@@ -45,5 +46,6 @@
     </div>
   </footer>
 </body>
+
 
 </html>
