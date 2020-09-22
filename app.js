@@ -3,10 +3,11 @@
 
 const submitButton = document.querySelector("#submit");
 const pokemonSearch = document.querySelector("#pokemonSearch");
-submitButton.addEventListener("click", (event) => {
-  userInput;
-  event.preventDefault()
-});
+
+//I could not figure out how to prevent the default behavior of clicking the button.
+submitButton.addEventListener("click", userInput, async (event) => {
+  event.preventDefault();
+})
 
 
 async function userInput() {
@@ -20,34 +21,7 @@ async function userInput() {
     console.log(`Error: ${error}`)
   }
 }
-userInput()
-
-
-
-// ${ APIdomain }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// userInput()
+// button.addEventListener('click', async (event) => {
+//   // Prevent form from doing it's thing.
+//   event.preventDefault();
