@@ -58,6 +58,7 @@ Results Page:
 
 - Add background music
 - Potentially add a button that will redirect users to Bulbopedia from the Results page
+- Add a "landing page" for asthetic purposes
 
 ## Project Schedule
 
