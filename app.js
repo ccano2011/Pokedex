@@ -26,16 +26,19 @@ async function userInput(e) {
     let userInput = pokemonSearch.value;
     // console.log(userInput)
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${userInput}`)
-    console.log(response)
+    console.log(response.data.name)
+    // renderList()
+    response.data.name
   } catch (error) {
     console.log(`Error: ${error}`)
   }
 }
-userInput()
+// userInput()
 
 // function renderList() {
 //   const pokemonName = document.createElement('h1')  //;
-//   let name = data.species.name
+//   userInput()
+//   console.log(name)
 //   pokemonName.innerHTML = `${name}`
 //   document.querySelector('.topOfPage').appendChild(name)
 // }
