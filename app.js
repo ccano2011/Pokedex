@@ -42,3 +42,4 @@ async function userInput(e) {
 //   pokemonName.innerHTML = `${name}`
 //   document.querySelector('.topOfPage').appendChild(name)
 // }
+// console.log(renderList())
