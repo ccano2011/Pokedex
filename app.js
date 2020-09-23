@@ -1,8 +1,7 @@
 // Code used as reference (w3school):
 // "userInput()
 // button.addEventListener('click', async (event) => {
-//   // Prevent form from doing it's thing.
-//   event.preventDefault();"
+// event.preventDefault();"
 
 // const APIdomain = 'https://pokeapi.co/api/v2/pokemon/';
 const submitButton = document.querySelector("#submit");
@@ -32,14 +31,14 @@ async function userInput(e) {
     console.log(`Error: ${error}`)
   }
 }
-userInput()
+// userInput()
 
-const renderList = species => {
-  for (const pokemon in species) {
-    console.log(species[pokemon].name)
-    const pokemonName = document.createElement('h1')
-    pokemonName.innerHTML = species[pokemon].name
-    topOfPage.appendChild(pokemonName);
-  }
+const renderList = pokemon => {
+  const pokemonName = document.createElement('h1');
+  pokemonName.innerHTML = pokemon.name;
+  topOfPage.appendChild(pokemonName);
+
+  const sprite = document.createElement('img');
+  sprite.setAttribute('src', pokemon.sprites.front_default);
+  spritePicture.appendChild(sprite);
 }
-// console.log(renderList())
