@@ -1,23 +1,11 @@
-// Code used as reference (w3school):
-// "userInput()
-// button.addEventListener('click', async (event) => {
-// event.preventDefault();"
-
 // const APIdomain = 'https://pokeapi.co/api/v2/pokemon/';
 const submitButton = document.querySelector("#submit");
 const pokemonSearch = document.querySelector("#pokemonSearch");
 const topOfPage = document.querySelector(".topOfPage");
 
-submitButton.addEventListener("click", userInput)//, async (event) => {
-// event.preventDefault();})
+submitButton.addEventListener("click", userInput)
 
 //CORS Work around: https://cors-anywhere.herokuapp.com/
-
-const pokedexNumber = document.querySelector(".pokedexID");
-const spritePicture = document.querySelector(".picture");
-const pokemonInfo = document.querySelector(".info");
-const pokemonType = document.querySelector(".type");
-const baseStats = document.querySelector(".base-stats");
 
 async function userInput(e) {
   e.preventDefault()
@@ -34,11 +22,14 @@ async function userInput(e) {
 // userInput()
 
 const renderList = pokemon => {
-  const pokemonName = document.createElement('h1');
+  const pokemonName = document.querySelector('#name');
   pokemonName.innerHTML = pokemon.name;
-  topOfPage.appendChild(pokemonName);
 
-  const sprite = document.createElement('img');
+  const sprite = document.querySelector('#spritePic');
   sprite.setAttribute('src', pokemon.sprites.front_default);
-  spritePicture.appendChild(sprite);
+
+  const pokedexID = document.querySelector("#idNum");
+  pokedexID.innerHTML = pokemon.id;
+
+
 }
