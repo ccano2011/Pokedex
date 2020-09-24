@@ -70,7 +70,7 @@ Results Page:
 |9/23| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |9/23| MVP | Incomplete
 |TBD| Post MVP/Styling | Incomplete
-|TBD| Presentations | Incomplete
+|9/25| Presentations | Incomplete
 
 ## Priority Matrix
 
