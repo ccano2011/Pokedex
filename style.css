@@ -1,0 +1,55 @@
+body {
+  background-image: url("Assets/Homepage-background-blur.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  max-height: max-content;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  background-position: center;
+  max-width: 100%;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 30px
+}
+
+#pokemonSearch {
+  text-align: center;
+}
+
+.Pokedex {
+  /* background-image: url("Assets/Pokedex-design.png"); */
+  display: flex;
+  justify-content: center;
+  /* z-index: -1; */
+}
+
+.picture {
+  z-index: 10;
+  justify-content: center;
+  margin-right: 200px;
+  display: flex;
+  
+}
+
+#spritePic {
+  width: 100px;
+  height: auto;
+  margin-right: 100px;
+}

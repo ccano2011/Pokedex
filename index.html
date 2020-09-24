@@ -12,21 +12,32 @@
 </head>
 
 <body>
-  <header>
-    <img src="Assets/Pokedex sign logo.png">
-  </header>
-
+  <div class="logo">
+    <img src="Assets/Pokedex-sign-logo.png" id="logo">
+  </div>
+  <form class="search">
+    <!--TEMPORARY SEARCH FUNCTION; TO BE DELEGATED TO ANOTHER PAGE-->
+    <input type="text" name="pokemon" placeholder="Who's that Pokémon?" value="" id="pokemonSearch" />
+    <button id="submit">GO!</button>
+    <!-- <input type="submit" placeholder="GO" id="submitButton" /> -->
+  </form>
   <main>
-    <div class="topOfPage">
-      <!--Append Pokemon Name Here w. JS-->
-      <h1 id="name"></h1>
-    </div>
-    <div class="pokedexID">
-      <p id="idNum"></p>
-    </div>
     <div class="picture">
       <img id="spritePic">
       <!--Sprite Images from API Appended Here-->
+      <div class="Pokedex">
+        <img src="Assets/Pokedex-design.png" id="PokedexUnit">
+        <!--Where the Pokedex-design.png goes-->
+      </div>
+      <div class="topOfPage">
+        <!--Append Pokemon Name Here w. JS-->
+        <h1 id="name"></h1>
+      </div>
+      <div class="pokedexID">
+        <p id="idNum"></p>
+      </div>
+
+
     </div>
     <div class="weight">
       <p id="pokeWeight"></p>
@@ -39,7 +50,7 @@
       <p id="Special-Attack"></p>
       <p id="Special-Defense"></p>
       <p id="Speed"></p>
-      <!-- Pokemon Type from API Appended Here-->
+      <!-- Pokemon Stats from API Appended Here-->
     </div>
     <div class="type">
       <p id="pokeType"></p>
@@ -51,14 +62,6 @@
       <p id="flavorText"></p>
     </div>
   </main>
-  <footer>
-    <form class="search">
-      <!--TEMPORARY SEARCH FUNCTION; TO BE DELEGATED TO ANOTHER PAGE-->
-      <input type="text" name="pokemon" placeholder="Who's that Pokémon?" value="" id="pokemonSearch" />
-      <button id="submit">GO!</button>
-      <!-- <input type="submit" placeholder="GO" id="submitButton" /> -->
-    </form>
-  </footer>
 </body>
 
 </html>
