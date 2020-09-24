@@ -41,10 +41,12 @@ PokeAPI: https://pokeapi.co/docs/v2. An API sample of the Data using Pikachu as 
 
 ## Wireframes
 
-Home Page:
-![Imgur](https://i.imgur.com/U8kQjqX.png)
 Results Page:
 ![Imgur](https://i.imgur.com/0yWpJdn.png)
+
+**POST MVP**
+Home Page:
+![Imgur](https://i.imgur.com/U8kQjqX.png)
 
 ### MVP/PostMVP 
 
