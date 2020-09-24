@@ -16,7 +16,6 @@ async function userInput(e) {
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${userInput}`)
     // console.log(response.data)
     renderList(response.data)
-
   } catch (error) {
     console.log(`Error: ${error}`)
   }
@@ -25,7 +24,7 @@ async function userInput(e) {
 
 const renderList = pokemon => {
   const pokemonName = document.querySelector('#name');
-  pokemonName.innerHTML = pokemon.name.toUpperCase();
+  pokemonName.innerHTML = pokemon.name.toUpperCase();//Make a CSS to transform text
 
   const sprite = document.querySelector('#spritePic');
   sprite.setAttribute('src', pokemon.sprites.front_default);
@@ -67,5 +66,6 @@ function getflavorText(pokedexEntry) {
   }
 }
 
-// work around jQuery loop that gave me the idea
+// work around jQuery loop snippet that gave me the idea for 
+// how to traverse 2nd endpoint in the API:
 // for : ['language']['name'] == 'en'
