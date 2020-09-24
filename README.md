@@ -50,13 +50,14 @@ Results Page:
 
 #### MVP 
 
-- Implemment the API with proper endpoints for each section of the results (i.e. Species, Type, Bio/Info, Base Stat)
+- Implement the API with proper endpoints for each section of the results (i.e. Species, Type, Bio/Info, & Weight,)
 - Proper styling in the results page so the layout won't break between mobile and desktop views  
-- Have a working "Random Pokemon" button that will select a new Pokemon at random from the homepage
+
 
 #### PostMVP  
 
-- Add background music
+- Have a working "Random Pokemon" button that will select a new Pokemon at random from the homepage
+-Add background music
 - Potentially add a button that will redirect users to Bulbopedia from the Results page
 - Add a "landing page" for asthetic purposes
 
@@ -80,21 +81,32 @@ Results Page:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Procuring Assests for project| H | 2hrs| 1hr 7min. | ? |
-| Initial HTML document w/ Buttons, and Text-Inputs to set parameters for going through the API| H | 4hrs| 48 min | ? |
-| Implemmenting the API w proper Endpoints for JS in the console| H | 3hrs| ? | ? |
-| Have JS push results to the DOM| H | 5hrs| ? | ? |
+| Initial HTML document w/ Buttons, and Text-Inputs to set parameters for going through the API| H | 4hrs| 48min | ? |
+| Implemmenting the API w proper Endpoints for JS in the console| H | 3hrs| 9hrs 43min| ? |
+| Have JS push results to the DOM| H | 5hrs| ~7hrs | ? |
 | Initial Homepage CSS-Styling | H | 5hrs| ? | ? |
 | CSS Mobile-Styling | L | 2hrs| ? | ? |
-| Creating a Proper redirect button that takes results and sends user to Bulbapedia w/ results  | L | 2hrs| ? | ? |
 | Finilizing the CSS design| H | 3hrs| ? | ? |
 | Adding Sounds/Music | L | 2hrs| ? | ? |
+| POST-MVP Creating a Proper redirect button that takes results and sends user to Bulbapedia w/ results  | L | 2hrs| ? | ? |
 | Total | H | 28hrs| ? | ? |
 
 ## Code Snippet
-
-Will update this section with the code snippet I am most proud of :) 
+```
+function getflavorText(pokedexEntry) {
+  for (let i = 0; i < pokedexEntry.length; i++) {
+    if (pokedexEntry[i].language.name === 'en') {
+      // console.log(pokedexEntry[i])
+      return pokedexEntry[i].flavor_text;
+    }
+  }
+}
+```
 
 
 ## Change Log
 
- N/A  
+ 9/23/2020: 
+ - Moved "Have a working "Random Pokemon" button that will select a new Pokemon at random from the homepage" to post MVP to ensure a better deliverable project
+ - Added a "Weight" as a section. 
+ - Moddified some wireframes to better reflect the newer experience 

@@ -55,7 +55,7 @@ async function pokemonDescription(id) {
   }
 }
 
-// mac's help:
+// Mac & I wrote the following function together:
 
 function getflavorText(pokedexEntry) {
   for (let i = 0; i < pokedexEntry.length; i++) {
