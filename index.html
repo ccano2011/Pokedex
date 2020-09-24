@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Pokedex</title>
+  <title>Pokedex v1</title>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="app.js"></script>
 
@@ -13,6 +13,10 @@
 
 <body>
   <header>
+    <img src="Assets/Pokedex sign logo.png">
+  </header>
+
+  <main>
     <div class="topOfPage">
       <!--Append Pokemon Name Here w. JS-->
       <h1 id="name"></h1>
@@ -20,30 +24,40 @@
     <div class="pokedexID">
       <p id="idNum"></p>
     </div>
+    <div class="picture">
+      <img id="spritePic">
+      <!--Sprite Images from API Appended Here-->
+    </div>
+    <div class="weight">
+      <p id="pokeWeight"></p>
+      <!--Pokemon Weight Appended Here-->
+    </div>
+    <div class="stats">
+      <p id="HP"></p>
+      <p id="Attack"></p>
+      <p id="Defense"></p>
+      <p id="Special-Attack"></p>
+      <p id="Special-Defense"></p>
+      <p id="Speed"></p>
+      <!-- Pokemon Type from API Appended Here-->
+    </div>
+    <div class="type">
+      <p id="pokeType"></p>
+      <p id="pokeType2"></p>
+      <!-- Pokemon Type from API Appended Here-->
+    </div>
+    <div class="info">
+      <!--Append Pokedex Entry Here-->
+      <p id="flavorText"></p>
+    </div>
+  </main>
+  <footer>
     <form class="search">
       <!--TEMPORARY SEARCH FUNCTION; TO BE DELEGATED TO ANOTHER PAGE-->
       <input type="text" name="pokemon" placeholder="Who's that Pokémon?" value="" id="pokemonSearch" />
       <button id="submit">GO!</button>
       <!-- <input type="submit" placeholder="GO" id="submitButton" /> -->
     </form>
-  </header>
-
-  <main>
-    <div class="picture">
-      <img id="spritePic">
-      <!--Sprite Images from API Appended Here-->
-    </div>
-
-    <div class="type">
-      <!-- Pokemon Type from API Appended Here-->
-    </div>
-
-  </main>
-  <footer>
-    <div class="info">
-      <!--Append Pokedex Entry Here-->
-      <p id="flavorText"></p>
-    </div>
   </footer>
 </body>
 
