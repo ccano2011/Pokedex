@@ -67,8 +67,8 @@ Results Page:
 |---|---| ---|
 |9/21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |9/21| Project Approval | Approved
-|9/23| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|9/23| MVP | Incomplete
+|9/24| Core Application Structure (HTML, CSS, etc.) | Incomplete
+|9/24| MVP | Incomplete
 |TBD| Post MVP/Styling | Incomplete
 |9/25| Presentations | Incomplete
 
