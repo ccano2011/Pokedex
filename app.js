@@ -14,7 +14,7 @@ async function userInput(e) {
     let userInput = pokemonSearch.value.toLowerCase();
     // console.log(userInput)
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${userInput}`)
-    // console.log(response.data)
+    console.log(response.data)
     renderList(response.data)
   } catch (error) {
     console.log(`Error: ${error}`)
@@ -29,18 +29,45 @@ const renderList = pokemon => {
   const sprite = document.querySelector('#spritePic');
   sprite.setAttribute('src', pokemon.sprites.front_default);
 
+  const pokeWeight = document.querySelector("#pokeWeight");
+  pokeWeight.innerHTML = pokemon.weight + " lbs"
+
+  const pokemonType1 = document.querySelector("#pokeType");//Make a CSS to transform text
+  pokemonType1.innerHTML = pokemon.types[0].type.name
+
+  if (pokemon.types.length >= 2) {
+    const pokemonType2 = document.querySelector("#pokeType2")//Make a CSS to transform text
+    pokemonType2.innerHTML = pokemon.types[1].type.name
+  }
+
+  const hp = document.querySelector('#HP');
+  hp.innerHTML = "HP " + pokemon.stats[0].base_stat
+
+  const attack = document.querySelector('#Attack');
+  attack.innerHTML = "Attack " + pokemon.stats[1].base_stat
+
+  const defense = document.querySelector('#Defense');
+  defense.innerHTML = "Defense " + pokemon.stats[2].base_stat
+
+  const specialAttack = document.querySelector('#Special-Attack');
+  specialAttack.innerHTML = "Special Attack " + pokemon.stats[3].base_stat
+
+  const specialDefense = document.querySelector('#Special-Defense');
+  specialDefense.innerHTML = "Special Defense " + pokemon.stats[4].base_stat
+
+  const speed = document.querySelector('#Speed');
+  speed.innerHTML = "Speed " + pokemon.stats[5].base_stat
+
   const pokedexID = document.querySelector("#idNum");
-  pokedexID.innerHTML = pokemon.id
+  pokedexID.innerHTML = "# " + pokemon.id
   pokemonDescription(pokemon.id)
 }
-// const pokedexID = document.querySelector("#idNum").value
-// console.log(pokemonID)
+
 
 function pokeInfo(string) {
   let pokeInfo = document.querySelector('#flavorText');
   pokeInfo.innerHTML = textEntries
 }
-
 
 async function pokemonDescription(id) {
   try {
@@ -55,7 +82,7 @@ async function pokemonDescription(id) {
   }
 }
 
-// Mac & I wrote the following function together:
+// Mac helped me write the following function:
 
 function getflavorText(pokedexEntry) {
   for (let i = 0; i < pokedexEntry.length; i++) {
