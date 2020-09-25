@@ -7,12 +7,11 @@ submitButton.addEventListener("click", userInput)
 
 //Potential CORS Work around: https://cors-anywhere.herokuapp.com/
 
-
 async function userInput(e) {
   e.preventDefault()
   try {
     let userInput = pokemonSearch.value.toLowerCase();
-    // console.log(userInput)
+    console.log(userInput)
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${userInput}`)
     console.log(response.data)
     renderList(response.data)
@@ -24,7 +23,7 @@ async function userInput(e) {
 
 const renderList = pokemon => {
   const pokemonName = document.querySelector('#name');
-  pokemonName.innerHTML = pokemon.name.toUpperCase();//Make a CSS to transform text
+  pokemonName.innerHTML = pokemon.name[0].toUpperCase() + pokemon.name.substring(1);
 
   const sprite = document.querySelector('#spritePic');
   sprite.setAttribute('src', pokemon.sprites.front_default);
@@ -32,12 +31,14 @@ const renderList = pokemon => {
   const pokeWeight = document.querySelector("#pokeWeight");
   pokeWeight.innerHTML = pokemon.weight + " lbs"
 
-  const pokemonType1 = document.querySelector("#pokeType");//Make a CSS to transform text
+  const pokemonType1 = document.querySelector("#pokeType");
   pokemonType1.innerHTML = pokemon.types[0].type.name
 
+  const pokemonType2 = document.querySelector("#pokeType2")
   if (pokemon.types.length >= 2) {
-    const pokemonType2 = document.querySelector("#pokeType2")//Make a CSS to transform text
     pokemonType2.innerHTML = pokemon.types[1].type.name
+  } else {
+    pokemonType2.innerHTML = ""
   }
 
   const hp = document.querySelector('#HP');
@@ -50,17 +51,17 @@ const renderList = pokemon => {
   defense.innerHTML = "Defense " + pokemon.stats[2].base_stat
 
   const specialAttack = document.querySelector('#Special-Attack');
-  specialAttack.innerHTML = "Special Attack " + pokemon.stats[3].base_stat
+  specialAttack.innerHTML = "Sp. Attack " + pokemon.stats[3].base_stat
 
   const specialDefense = document.querySelector('#Special-Defense');
-  specialDefense.innerHTML = "Special Defense " + pokemon.stats[4].base_stat
+  specialDefense.innerHTML = "Sp. Defense " + pokemon.stats[4].base_stat
 
   const speed = document.querySelector('#Speed');
   speed.innerHTML = "Speed " + pokemon.stats[5].base_stat
 
   const pokedexID = document.querySelector("#idNum");
-  pokedexID.innerHTML = "# " + pokemon.id
-  pokemonDescription(pokemon.id)
+  pokedexID.innerHTML = " # " + pokemon.id //Appended the ID # to the DOM from the first API endpoint
+  pokemonDescription(pokemon.id)//Pokemon.ID was pulled from the first API endpoint: "id:"
 }
 
 
@@ -73,9 +74,9 @@ async function pokemonDescription(id) {
   try {
     const returnId = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/${id}/`)
     let flavorTextPacket = returnId.data.flavor_text_entries
-    // console.log(flavorTextPacket)
+    console.log(flavorTextPacket)
     textEntries = getflavorText(flavorTextPacket)
-    // console.log(textEntries)
+    console.log(textEntries)
     pokeInfo(textEntries)
   } catch (error) {
     console.log(`Error: ${error}`)

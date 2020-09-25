@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
 body {
   background-image: url("Assets/Homepage-background-blur.png");
   background-repeat: no-repeat;
@@ -6,6 +11,11 @@ body {
   max-height: max-content;
   background-size:cover;
   background-attachment: fixed;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 
 .logo {
@@ -33,23 +43,64 @@ body {
   text-align: center;
 }
 
-.Pokedex {
-  /* background-image: url("Assets/Pokedex-design.png"); */
+.pokedexWithSprite {
   display: flex;
   justify-content: center;
-  /* z-index: -1; */
+}
+
+.pokedexWithSprite {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 55px;
 }
 
 .picture {
   z-index: 10;
-  justify-content: center;
-  margin-right: 200px;
-  display: flex;
-  
 }
 
 #spritePic {
-  width: 100px;
-  height: auto;
-  margin-right: 100px;
+  position: absolute;
+  margin-top: 240px;
+  margin-left: 225px;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
 }
+
+#name {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#idNum {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#pokeWeight {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.stats {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.type {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
+.Entry {
+  display:flex;
+  background-color: rgb(204, 224, 255, 0.8);
+  margin-top: 0px;
+  margin-bottom: 0px; 
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+

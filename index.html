@@ -12,56 +12,73 @@
 </head>
 
 <body>
+  <!--Embedded Music code referenced from stackoverflow-->
+
+  <audio control src="Assets/Route_1.mp3" autoplay type=""><code>audio</code></audio>
+
   <div class="logo">
     <img src="Assets/Pokedex-sign-logo.png" id="logo">
   </div>
+
+
+
+  <main>
+    <div class="pokedexWithSprite">
+      <div class="picture">
+        <img id="spritePic">
+        <!--Sprite Images from API Appended Here-->
+      </div>
+      <div class="Pokedex">
+        <img src="Assets/Pokedex-design.png" id="PokedexUnit">
+        <!--Where the Pokedex-design.png goes-->
+      </div>
+    </div>
+
+    <div class="Entry">
+      <div class="topOfPage">
+        <!--Append Pokemon Name Here w. JS-->
+        <p id="name"></p>
+      </div>
+
+      <div class="pokedexID">
+        <p id="idNum"></p>
+      </div>
+
+      <div class="weight">
+        <p id="pokeWeight"></p>
+        <!--Pokemon Weight Appended Here-->
+      </div>
+
+      <div class="stats">
+        <p id="HP"></p>
+        <p id="Attack"></p>
+        <p id="Defense"></p>
+        <p id="Special-Attack"></p>
+        <p id="Special-Defense"></p>
+        <p id="Speed"></p>
+        <!-- Pokemon Stats from API Appended Here-->
+      </div>
+
+      <div class="type">
+        <p id="pokeType"></p>
+        <p id="pokeType2"></p>
+        <!-- Pokemon Type from API Appended Here-->
+      </div>
+
+      <div class="info">
+        <!--Append Pokedex Entry Here-->
+        <p id="flavorText"></p>
+      </div>
+    </div>
+  </main>
+
   <form class="search">
     <!--TEMPORARY SEARCH FUNCTION; TO BE DELEGATED TO ANOTHER PAGE-->
     <input type="text" name="pokemon" placeholder="Who's that Pokémon?" value="" id="pokemonSearch" />
     <button id="submit">GO!</button>
     <!-- <input type="submit" placeholder="GO" id="submitButton" /> -->
   </form>
-  <main>
-    <div class="picture">
-      <img id="spritePic">
-      <!--Sprite Images from API Appended Here-->
-      <div class="Pokedex">
-        <img src="Assets/Pokedex-design.png" id="PokedexUnit">
-        <!--Where the Pokedex-design.png goes-->
-      </div>
-      <div class="topOfPage">
-        <!--Append Pokemon Name Here w. JS-->
-        <h1 id="name"></h1>
-      </div>
-      <div class="pokedexID">
-        <p id="idNum"></p>
-      </div>
 
-
-    </div>
-    <div class="weight">
-      <p id="pokeWeight"></p>
-      <!--Pokemon Weight Appended Here-->
-    </div>
-    <div class="stats">
-      <p id="HP"></p>
-      <p id="Attack"></p>
-      <p id="Defense"></p>
-      <p id="Special-Attack"></p>
-      <p id="Special-Defense"></p>
-      <p id="Speed"></p>
-      <!-- Pokemon Stats from API Appended Here-->
-    </div>
-    <div class="type">
-      <p id="pokeType"></p>
-      <p id="pokeType2"></p>
-      <!-- Pokemon Type from API Appended Here-->
-    </div>
-    <div class="info">
-      <!--Append Pokedex Entry Here-->
-      <p id="flavorText"></p>
-    </div>
-  </main>
 </body>
 
 </html>
