@@ -72,7 +72,7 @@ Home Page:
 |9/24| Core Application Structure (HTML, CSS, etc.) | Complete
 |9/25| MVP | Complete
 |TBD| Post MVP/Styling | Incomplete
-|9/25| Presentations | Incomplete
+|9/25| Presentations | Complete
 
 ## Priority Matrix
 
