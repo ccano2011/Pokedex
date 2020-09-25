@@ -42,7 +42,7 @@ PokeAPI: https://pokeapi.co/docs/v2. An API sample of the Data using Pikachu as 
 ## Wireframes
 
 Results Page:
-![Imgur](https://i.imgur.com/0yWpJdn.png)
+![Imgur](https://i.imgur.com/h8aB1F9.png)
 
 **POST MVP**
 Home Page:
@@ -69,8 +69,8 @@ Home Page:
 |---|---| ---|
 |9/21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |9/21| Project Approval | Approved
-|9/24| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|9/24| MVP | Incomplete
+|9/24| Core Application Structure (HTML, CSS, etc.) | Complete
+|9/25| MVP | Complete
 |TBD| Post MVP/Styling | Incomplete
 |9/25| Presentations | Incomplete
 
@@ -86,10 +86,10 @@ Home Page:
 | Initial HTML document w/ Buttons, and Text-Inputs to set parameters for going through the API| H | 4hrs| 48min | ? |
 | Implemmenting the API w proper Endpoints for JS in the console| H | 3hrs| 9hrs 43min| ? |
 | Have JS push results to the DOM| H | 5hrs| ~7hrs | ? |
-| Initial Homepage CSS-Styling | H | 5hrs| ? | ? |
-| CSS Mobile-Styling | L | 2hrs| ? | ? |
+| Initial Homepage CSS-Styling | H | 5hrs| 3hrs | ? |
+| CSS Mobile-Styling | L | 2hrs| 30min | ? |
 | Finilizing the CSS design| H | 3hrs| ? | ? |
-| Adding Sounds/Music | L | 2hrs| ? | ? |
+| POST-MVP Adding Sounds/Music | L | 2hrs| ? | ? |
 | POST-MVP Creating a Proper redirect button that takes results and sends user to Bulbapedia w/ results  | L | 2hrs| ? | ? |
 | Total | H | 28hrs| ? | ? |
 
@@ -112,3 +112,7 @@ function getflavorText(pokedexEntry) {
  - Moved "Have a working "Random Pokemon" button that will select a new Pokemon at random from the homepage" to post MVP to ensure a better deliverable project
  - Added a "Weight" as a section. 
  - Moddified some wireframes to better reflect the newer experience 
+
+ 9/24/2020:
+ - Appended new wireframe of the newer & asthetically better experience
+ - Added a new background for the `@media` query breakpoint 
