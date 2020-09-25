@@ -1,3 +1,7 @@
+*{
+  font-family:'Comfortaa', cursive;;
+}
+
 body {
   background-image: url("Assets/Homepage-background-blur.png");
   background-repeat: no-repeat;
@@ -40,7 +44,9 @@ body {
   height: 500px;
   margin-bottom: 55px;
 }
-
+/* Shout out to Jairo, Janice, & Andrew
+   for helping me out with z-index*/
+   
 .picture {
   z-index: 10;
 }
@@ -100,10 +106,10 @@ body {
 }
 
 #flavorText {
-  font-size: 25px;
+  font-size: 15px;
 }
 
-@media screen and (max-width:760px){
+@media screen and (max-width:818px){
   body {
     background-image: url("Assets/media query background.png");
     background-repeat: no-repeat;
@@ -149,9 +155,11 @@ body {
   }
   .stats {
     text-align: center;
+    font-size: 20px;
   }
   #flavorText {
     text-align: center;
+    font-size: 20px;
   }
   .type {
     text-align: center;
