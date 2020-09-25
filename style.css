@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  }
-
 body {
   background-image: url("Assets/Homepage-background-blur.png");
   background-repeat: no-repeat;
@@ -11,11 +6,6 @@ body {
   max-height: max-content;
   background-size:cover;
   background-attachment: fixed;
-}
-
-p {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
 }
 
 .logo {
@@ -46,9 +36,6 @@ p {
 .pokedexWithSprite {
   display: flex;
   justify-content: center;
-}
-
-.pokedexWithSprite {
   width: 100%;
   height: 500px;
   margin-bottom: 55px;
@@ -58,6 +45,9 @@ p {
   z-index: 10;
 }
 
+.pokedexID {
+  font-size: 30px;
+}
 #spritePic {
   position: absolute;
   margin-top: 240px;
@@ -70,6 +60,7 @@ p {
 #name {
   margin-right: 20px;
   margin-left: 20px;
+  font-size: 40px;
 }
 
 #idNum {
@@ -80,22 +71,26 @@ p {
 #pokeWeight {
   margin-right: 20px;
   margin-left: 20px;
+  font-size: 30px;
 }
 
 .stats {
   margin-right: 20px;
   margin-left: 20px;
+  font-size: 15px;
 }
 
 .type {
   margin-right: 20px;
   margin-left: 20px;
   text-transform: capitalize;
+  font-size: 40px;
 }
 
 .Entry {
   display:flex;
   background-color: rgb(204, 224, 255, 0.8);
+  border: thick double #000000;
   margin-top: 0px;
   margin-bottom: 0px; 
   max-width: 800px;
@@ -104,3 +99,61 @@ p {
   align-items: center;
 }
 
+#flavorText {
+  font-size: 25px;
+}
+
+@media screen and (max-width:760px){
+  body {
+    background-image: url("Assets/media query background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    max-height: max-content;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+  .Entry {
+    display: block;
+    background-color: rgb(204, 224, 255, 0.8);
+    border: thick double #000000;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+  .Pokedex {
+    display: none;
+  }
+  #spritePic {
+    min-width: 400px;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 0;
+    margin-left: 0;
+    max-width: fit-content;
+  }
+  .search {
+    height: 90px;
+  }
+  #name {
+    text-align: center;
+  }
+  #idNum {
+    text-align: center;
+  }
+  #pokeWeight {
+    text-align: center;
+  }
+  .stats {
+    text-align: center;
+  }
+  #flavorText {
+    text-align: center;
+  }
+  .type {
+    text-align: center;
+  }
+}
