@@ -58,8 +58,9 @@ Home Page:
 
 #### PostMVP  
 
+- Rewrite the JS in React!
 - Have a working "Random Pokemon" button that will select a new Pokemon at random from the homepage
--Add background music
+- Add background music
 - Potentially add a button that will redirect users to Bulbopedia from the Results page
 - Add a "landing page" for asthetic purposes
 
@@ -88,10 +89,10 @@ Home Page:
 | Have JS push results to the DOM| H | 5hrs| ~7hrs | ? |
 | Initial Homepage CSS-Styling | H | 5hrs| 3hrs | ? |
 | CSS Mobile-Styling | L | 2hrs| 30min | ? |
-| Finilizing the CSS design| H | 3hrs| ? | ? |
+| Finilizing the CSS design| H | 3hrs| 30min | ? |
 | POST-MVP Adding Sounds/Music | L | 2hrs| ? | ? |
 | POST-MVP Creating a Proper redirect button that takes results and sends user to Bulbapedia w/ results  | L | 2hrs| ? | ? |
-| Total | H | 28hrs| ? | ? |
+| Total | H | 28hrs| 24.7hrs | ? |
 
 ## Code Snippet
 ```
@@ -116,3 +117,6 @@ function getflavorText(pokedexEntry) {
  9/24/2020:
  - Appended new wireframe of the newer & asthetically better experience
  - Added a new background for the `@media` query breakpoint 
+ 
+ 10/7/2020:
+ - Added a new Post-MVP: Rewrite in React!
