@@ -89,7 +89,7 @@ function getflavorText(pokedexEntry) {
   for (let i = 0; i < pokedexEntry.length; i++) {
     if (pokedexEntry[i].language.name === 'en') {
       // console.log(pokedexEntry[i])
-      return pokedexEntry[i].flavor_text;
+      return pokedexEntry[i].flavor_text; //more comments
     }
   }
 }
